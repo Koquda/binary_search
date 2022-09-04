@@ -1,0 +1,57 @@
+.grid {
+  width: 50%;
+}
+
+#buttons {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+#array_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff; 
+  text-align: center;
+}
+
+.array_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff; 
+  text-align: center;
+}
+
+.array_element {
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  background-color: lightskyblue;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.compare_element {
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  background-color: #1ebb57;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}

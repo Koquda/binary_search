@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">   
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Binary search visualizer</title>
+  </head>
+  <body>
+    <div id="app">
+      <br><h1 style="color: #fff; text-align: center;">Binary Search Visualizer</h1><hr>
+      <div id="buttons">
+        <form id="generate_array_form" class="grid">
+            <input type="number" name="array_size" id="array_size" min="5" max="300" placeholder="Array size" />
+            <input type="submit" id="generate_array_btn" value="Generate new array"/>
+        </form>
+        <form id="search_form" class="grid" style="margin-left: 1%;">
+            <input type="text" name="search_value" id="search_value" placeholder="Search value" />
+            <input type="submit" id="search_btn" value="Search" />
+        </form>
+      </div>
+      <!-- The div where the array will be displayed -->
+      <div id="visualizer_container"></div>
+
+    </div>
+
+    <script src="src/binarySearch.js"></script>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
