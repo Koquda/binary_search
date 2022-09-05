@@ -82,6 +82,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Get the search value
         let search_value = $('#search_value').value;
+
+        // Check if the value is in the array
+        if (!contains(search_value)){
+            return alert('The value is not in the array')
+        }
         
         // Search the array
         let result = binarySearch(array, 0, array.length - 1, search_value, array);
@@ -99,6 +104,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const div = $('#visualizer_container');
         if (!div) return;
         div.remove();
+    }
+
+    function contains(value){
+        for (let i = 0; i < array.length; i++){
+            if (array[i] == value){
+                return true;
+            }
+        }
+        return false
     }
 });
 

@@ -25,7 +25,7 @@ function binarySearch(arr, left, right, x, prevArr){
                 return mid + 1;
             }
         }   
-        else {
+        else if (prevArr.length % 2 !== 0){
             if (arr[mid + 1] == x){
                 showSlicedArray([x], prevArr, x);
                 firstIter = false
@@ -91,9 +91,9 @@ function showSlicedArray(slicedArr, arr, x){
     container.innerHTML += outputStr;
     document.getElementById('visualizer_container').append(container);
     
-    
-    // Remove the comparison
-    // document.getElementById('comparison').remove();
+    if (slicedArr.length == 1){
+        found();
+    }
 }
 
 // Returns the string of the comparison
@@ -116,4 +116,10 @@ function getCompareString(mid, x){
 function getIteration()
 {
     return iteration;
+}
+
+function found(){
+    const element = $(`#array_container${iteration}`).querySelector('.array_element');
+    element.classList.add('found');
+
 }
