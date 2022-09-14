@@ -1,5 +1,4 @@
 # BINARY SEARCH VISUALIZER
-#### Video Demo:  <https://youtu.be/pRHKLiX_-64>
 #### Description:
 The project is an alogrithm visualizer, specifically a binary search algorithm.
 It is design to be a tool for students to learn how the algorithm works.
